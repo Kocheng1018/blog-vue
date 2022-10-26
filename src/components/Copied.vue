@@ -26,7 +26,7 @@ const handleCopy = () => {
 }
 
 const copyUrl = () => {
-  const _input = copiedInput.value
+  const _input: any = copiedInput.value
   _input.value = props.target || window.location.href
   _input.select()
   _input.setSelectionRange(0, 99999)
